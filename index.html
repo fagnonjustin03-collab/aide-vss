@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Violences sexistes et sexuelles : où trouver de l’aide</title>
+<meta name="description" content="Numéros et sites pour être écouté·e, orienté·e et protégé·e en cas de violences sexistes et sexuelles.">
+<style>
+  :root {
+    --bg: #f6f5fa;
+    --surface: #ffffff;
+    --ink: #1d1b2e;
+    --muted: #5a5870;
+    --line: #dcd9e8;
+    --accent: #5b3fa0;
+    --accent-ink: #ffffff;
+    --alert: #a3262a;
+    --alert-bg: #fdeeee;
+    --alert-ink: #5c1417;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15131f;
+      --surface: #1f1c2d;
+      --ink: #efedf8;
+      --muted: #a9a6bf;
+      --line: #35314a;
+      --accent: #b9a4f5;
+      --accent-ink: #15131f;
+      --alert: #ff8d8f;
+      --alert-bg: #3a1c1f;
+      --alert-ink: #ffd9da;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    padding: max(1rem, env(safe-area-inset-top)) 1rem max(2rem, env(safe-area-inset-bottom));
+  }
+  main { max-width: 38rem; margin: 0 auto; }
+  header { padding: 1.25rem 0 0.5rem; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 0.75rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.125rem; margin: 2rem 0 0.75rem; }
+  p { margin: 0 0 0.75rem; }
+  .intro { color: var(--muted); max-width: 34rem; }
+
+  .exit {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.9375rem;
+    cursor: pointer;
+  }
+
+  .danger {
+    background: var(--alert-bg);
+    color: var(--alert-ink);
+    border-left: 6px solid var(--alert);
+    border-radius: 6px;
+    padding: 1rem 1.1rem;
+    margin-top: 1rem;
+  }
+  .danger h2 { margin: 0 0 0.5rem; color: var(--alert-ink); }
+  .danger ul { list-style: none; margin: 0; padding: 0; }
+  .danger li { margin: 0.35rem 0; }
+  .danger a { color: var(--alert-ink); font-weight: 700; font-size: 1.25rem; }
+  .danger small { display: block; font-size: 0.9375rem; opacity: 0.9; }
+
+  ul.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+  .item {
+    display: grid;
+    grid-template-columns: minmax(5.5rem, auto) 1fr;
+    gap: 0.25rem 1rem;
+    align-items: baseline;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+  }
+  .item .num, .item .site {
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .item .site { font-size: 1.0625rem; white-space: normal; overflow-wrap: anywhere; }
+  .item .what { font-weight: 600; }
+  .item .detail { grid-column: 2; color: var(--muted); font-size: 0.9375rem; margin: 0; }
+  .item.wide { grid-template-columns: 1fr; }
+  .item.wide .detail { grid-column: 1; }
+
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  a { color: var(--accent); }
+
+  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9375rem; }
+
+  @media (max-width: 26rem) {
+    .item { grid-template-columns: 1fr; }
+    .item .detail { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <button class="exit" type="button" onclick="window.location.replace('https://www.meteofrance.com')">Quitter rapidement cette page</button>
+
+  <header>
+    <h1>Violences sexistes et sexuelles : où trouver de l’aide</h1>
+    <p class="intro">Que vous soyez victime ou témoin, vous n’êtes pas seul·e. Ces services sont gratuits. Les numéros d’écoute sont confidentiels.</p>
+  </header>
+
+  <section class="danger" aria-labelledby="urgence">
+    <h2 id="urgence">En danger immédiat</h2>
+    <ul>
+      <li><a href="tel:17">17</a> Police / gendarmerie</li>
+      <li><a href="tel:112">112</a> Numéro d’urgence européen</li>
+      <li><a href="tel:15">15</a> Urgences médicales (SAMU)</li>
+      <li><strong style="font-size:1.25rem">114</strong> par SMS, pour les personnes sourdes, malentendantes ou qui ne peuvent pas parler<small>Envoyez un SMS au 114 pour alerter les secours.</small></li>
+    </ul>
+  </section>
+
+  <h2>Être écouté·e et orienté·e</h2>
+  <ul class="list">
+    <li class="item">
+      <a class="num" href="tel:3919">3919</a>
+      <span class="what">Violences Femmes Info</span>
+      <p class="detail">Écoute, information et orientation pour les femmes victimes de violences. Gratuit et anonyme. Ce n’est pas un numéro d’urgence.</p>
+    </li>
+    <li class="item">
+      <a class="num" href="tel:0800059595">0 800 05 95 95</a>
+      <span class="what">Viols Femmes Informations</span>
+      <p class="detail">Ligne du Collectif Féministe Contre le Viol. Gratuit et anonyme, du lundi au vendredi de 10 h à 19 h.</p>
+    </li>
+    <li class="item">
+      <a class="num" href="tel:116006">116 006</a>
+      <span class="what">Aide aux victimes</span>
+      <p class="detail">Écoute et orientation pour toute victime d’infraction, portées par France Victimes. 7 j/7, de 9 h à 20 h. Depuis l’étranger : +33 1 80 52 33 76.</p>
+    </li>
+    <li class="item">
+      <a class="num" href="tel:119">119</a>
+      <span class="what">Enfance en danger</span>
+      <p class="detail">Pour un enfant ou un adolescent victime de violences, ou pour un témoin qui s’inquiète pour lui.</p>
+    </li>
+    <li class="item">
+      <a class="num" href="tel:115">115</a>
+      <span class="what">Hébergement d’urgence</span>
+      <p class="detail">Pour trouver une mise à l’abri si vous devez quitter votre domicile.</p>
+    </li>
+  </ul>
+
+  <h2>En ligne</h2>
+  <ul class="list">
+    <li class="item wide">
+      <a class="site" href="https://arretonslesviolences.gouv.fr/" rel="noopener">arretonslesviolences.gouv.fr</a>
+      <p class="detail">Plateforme officielle : s’informer, signaler des violences et échanger par tchat avec un policier ou un gendarme formé, 24 h/24 et 7 j/7.</p>
+    </li>
+    <li class="item wide">
+      <a class="site" href="https://www.service-public.fr/" rel="noopener">service-public.fr</a>
+      <p class="detail">Démarches, droits et recours après des violences (plainte, protection, aides).</p>
+    </li>
+  </ul>
+
+  <h2>Situations particulières</h2>
+  <ul class="list">
+    <li class="item">
+      <a class="num" href="tel:0145842424">01 45 84 24 24</a>
+      <span class="what">Violences au travail</span>
+      <p class="detail">Association européenne contre les violences faites aux femmes au travail (AVFT). Contact : contact@avft.org</p>
+    </li>
+    <!--
+      Pour ajouter une structure, copiez un bloc <li class="item"> ci-dessus et modifiez-le.
+      Exemples utiles : cellule d’écoute de votre établissement, CIDFF de votre département,
+      association locale d’aide aux victimes.
+    -->
+  </ul>
+
+  <footer>
+    <p>Si vous hésitez, appelez le 3919 ou le 116 006 : on vous aidera à trouver la bonne structure près de chez vous.</p>
+    <p>Dernière vérification des numéros : novembre 2026.</p>
+  </footer>
+</main>
+</body>
+</html>
